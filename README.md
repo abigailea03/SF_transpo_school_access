@@ -1,5 +1,5 @@
-# San Fransico Transportation Group Assignment  
-This is the group repository for the SF Transportation group project in UP 221.
+# Accessibilty of San Francisco Public High Schools by MUNI
+This is the group repository for the SF Transportation group project in UP 221. The group members include: Abigail Adams, Ronald Tien Giang, and Caleb Huang. 
 ## Introduction
 The project looks at San Francisco public high schools and accessibility to those high schools via San Francisco Municipal Railway (“Muni”) through buses and light rail. San Francisco has a unique situation where families are able to rank and choose to attend almost any public high school within the district. 
 ## Explanation
