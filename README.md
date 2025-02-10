@@ -1,61 +1,42 @@
-# UP 221 Winter 2025: San Francisco Transportation Group 
-This is the group repository for the SF Transportation group project in UP 221. The group members include: Abigail Adams, Jasmine Law, Ronald Tien Giang, and Caleb Huang. 
+# Updated Project Proposal: Transportation Access to High Schools in San Francisco
+**Group Members:** Abigail Adams, Jasmine Law, Ronald Tien Giang, and Caleb Huang
 
-# Status Update
-## **PROJECT TITLE:** Accessibilty of SF Public Highschools by MUNI
-## **GROUP MEMBERS:** Abigail Adams, Jasmine Law, Ronald Tien Giang, and Caleb Huang
+## Introduction
+The project looks at San Francisco public high schools and accessibility to those high schools via San Francisco Municipal Railway (“Muni”) through buses and light rail. San Francisco has a unique situation where families are able to rank and choose to attend almost any public high school within the district. 
 
-### **TASKS:**
-#### 1. Ronald 
-* Bus lines directions and schools
-* School locations within .25 mile  due to 3.0mph walk speed, 5 min walk
-* Bus locations and directions
+## Explanation
+San Francisco’s open enrollment policy allows students residing anywhere in the city to select the public high school that best suits their needs. However, being able to attend is more than simply admission. Students have to be able to physically get to the schools themselves. Students may attend school via a variety of methods such as driving to school, public transportation or walking. However, students who do not have access to a vehicle likely rely on public transportation and walking. If those students do not live close to the school they wish to attend, the only resort is to use public transportation. If those students are not served by public transportation, then the policy of picking any school would fail to be equitabley accessible. This is especially important in considering upward mobility. Children who attend better schools tend to be better off in the long term. Ideally, it would be great if schools had comparable resource levels, but that’s requires long term change, and allowing students to go to better schools would generate improvements in the meantime. 
 
-#### 2. Abigail: Demographics/Socioeconomic
-* Role: data exploration of income + socioeconomic data, map and/or chart in SF using census tracts
-* Poverty level, family poverty levels -> Census age group: 5-17, or 18-24 (filter for only 18)
-* Housing characteristics with Jasmine 
-* Responsible for 1 chart OR 1 static map 
+## Description
+San Francisco is the spatial scope used for this study. San Francisco is unique in government structure with both the City and County lines being the same. This allows for observation of buses because there is only one bus organization that operates unlike Los Angeles where there are so many different municipalities with many having their own bus lines. Another factor is San Francisco’s policy of allowing students to choose any high school they wish to attend. In most cases, students attend high schools close to them and are only allowed to other schools if they get accepted via open enrollment or score high enough on their exams and get into special programs. However, with almost all schools available for attendance, it provides an insight into how available those schools are. 
+Another consideration is using the demographic of the school and the demographic of the region to determine where students are coming from. In most normal circumstances, the school's demographics would be roughly proportional to the neighboring area. However, by allowing any resident to attend almost any school, students from different parts of the city would be commuting to different high schools. This would be reflected in the demographic shifts between the school and the area. Some students will access schools by public transportation. This will be determined by looking at schools within the board of supervisor districts and the demographics within those districts. Also, San Francisco Street Tree Data will be used to find the amount of tree canopy available near schools and bus stops.
 
-#### 3. Caleb 
-* Race
-* Equity Priority Communities
-* Tree Canopy/Bus Shelters near schools and bus stops 
+## Data Source
+In order to analyze school demographics in San Francisco, data from the California Department of Education provide on demographics by high schools. To determine the access by public transportation, Muni stops will be used to determine where bus stops are located. Included in this study will be a map of all public schools and how close those stops are to public high schools. We will also be using data from the US Census American Community Survey to look at resident demographic in SF, such as income and the percentage of the populaiton that is under 18 yeard old. 
 
+* School Demographics: https://www.cde.ca.gov/ds/ad/dataquest.asp
 
-#### 4. Jasmine
-* Muni ridership data for school-based lines 
-* Housing characteristics with Abigail
+* Muni Stops: https://data.sfgov.org/Transportation/Map-of-Muni-Stops/kgz5-a5r3
 
-###  **CONCERNS:** 
-#### Major:
-* Merge non-spatial data frame with spatial data frame 
-#### Minor: 
-* How to filter out tree canopy data to only include trees on sidewalks near bus stops
-* Find dataset on SF high school locations 
-* having too many moving parts in the project / managing scope
+* US Census ACS: https://www.socialexplorer.com/reports/socialexplorer/en/report/0d5e85e6-e803-11ef-8614-bbc85c1b514c
 
-### VISUALIZATIONS: 
-* 2 Maps 
-  - Census tracts of rent burden-ness in SF
-* 2 Charts
-  - Demographics/Socioeconomic: at least one chart from this topic
-  - possibly comparing demographic information of school vs. voting district
+* San Francisco Street Tree Data: https://data.sfgov.org/City-Infrastructure/Street-Tree-List/tkzw-k3nq/data
 
-### **Status Update:** 
-We have been working individually on the demographics and transportation profile of San Francisco. We are busy and tired but hopeful and working well together. We are still getting comfortable with python but are improving slowly. 
+## Scope
+The visual analysis will start by mapping out all the bus stops in San Francisco. Afterward, the map will demonstrate where public high schools and the bus stops that are close to these high schools. Finally, a comparison of demographic data between each high school and the district demographics nearby, looking at variables such as median income, population of school-aged youth, and housing characertistics.  
 
-### **Data update:**
-Census tract data in SF will be used to:  
-* Filter for amount of rent burdened individuals, also by tract
-* Look at census tracts with high poverty levels and high levels of school enrollment (individuation of students in area) 
-* Look at housing characterics in area: vacancy rates (renter vs homeowner), etc
-* https://data.census.gov/table/ACSSDP1YCD1192023.DP04?q=DP04:%20Selected%20Housing%20Characteristics
+## Conclusion
+We expect to see a relationship between socioeconomic characteristics of a neighborhood and the degree to which they are served by schools that have are known for having better resources, specifically more accessible transportation access connecting majorily high income and white neighborhoods to high-performing schools. From an early observation, there seems to be some mismatch in the demographics between the demographics of the school and the demographics of the neighboring region. How much of that is due to access to public transportation and public transportation’s ability to reach some schools is to be determined. 
 
-San Francisco Street Tree Data
-* will be used to find the amount of tree canopy available near schools and bus stops. 
-* https://data.sfgov.org/City-Infrastructure/Street-Tree-List/tkzw-k3nq/data
+## Viusalizations
+### Maps: 
+1. Choropleath map on median family income in SF by census tract 
+2. Choropleath map on Street Tree Density 
+3. (Interactive) Choropleth map of where the school aged youth live in San Francisco, by census tract 
+4. Map of SF High Schools with Bus Stops Routes
 
-Ridership data will be used to: 
-* compare which lines support the most high school students (based on ridership activity from September - May)
-* Can be either displayed as a bar chart, or maybe incorporated onto an interactive map (for example, displaying average weekday ridership when hovering over the line with a mouse)
+### Charts: 
+1. Histogram on median family income in SF
+2. Bar chart on census tract with least amount of street trees
+3. Bar chart of Top 10 census tracts with school-aged youth 
+4. Bar chart of percentage of youth ages 5-17 by neighborhood 
