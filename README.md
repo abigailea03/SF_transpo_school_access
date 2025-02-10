@@ -8,7 +8,7 @@ This is the group repository for the SF Transportation group project in UP 221. 
 ### **TASKS:**
 #### 1. Ronald 
 * Bus lines directions and schools
-* School locations within .5 mile  due to 3.0mph walk speed, 10 min walk
+* School locations within .25 mile  due to 3.0mph walk speed, 5 min walk
 * Bus locations and directions
 
 #### 2. Abigail: Demographics/Socioeconomic
