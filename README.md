@@ -55,6 +55,7 @@ Census tract data in SF will be used to:
 San Francisco Street Tree Data
 * will be used to find the amount of tree canopy available near schools and bus stops. 
 * https://data.sfgov.org/City-Infrastructure/Street-Tree-List/tkzw-k3nq/data
+
 Ridership data will be used to: 
 * compare which lines support the most high school students (based on ridership activity from September - May)
 * Can be either displayed as a bar chart, or maybe incorporated onto an interactive map (for example, displaying average weekday ridership when hovering over the line with a mouse)
